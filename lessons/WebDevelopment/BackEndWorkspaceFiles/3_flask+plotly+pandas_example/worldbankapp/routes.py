@@ -1,5 +1,6 @@
 from worldbankapp import app
 import json, plotly
+import plotly.graph_objs as go
 from flask import render_template
 from wrangling_scripts.wrangle_data import return_figures
 

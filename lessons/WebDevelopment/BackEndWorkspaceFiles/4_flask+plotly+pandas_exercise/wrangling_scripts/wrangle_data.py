@@ -3,7 +3,7 @@ import plotly.graph_objs as go
 
 # TODO: Scroll down to line 157 and set up a fifth visualization for the data dashboard
 
-def cleandata(dataset, keepcolumns = ['Country Name', '1990', '2015'], value_variables = ['1990', '2015']):
+def cleandata(dataset, keepcolumns = ['Country Name', '1990','1995','2000' ,'2015'], value_variables = ['1990', '1995','2000','2015']):
     """Clean world bank data for a visualizaiton dashboard
 
     Keeps data range of dates in keep_columns variable and data for the top 10 economies
@@ -65,7 +65,7 @@ def return_figures():
           )
       )
 
-    layout_one = dict(title = 'Change in Hectares Arable Land <br> per Person 1990 to 2015',
+    layout_one = dict(title = 'Change in Hectares Arable Landmass <br> per Person 1990 to 2015',
                 xaxis = dict(title = 'Year',
                   autotick=False, tick0=1990, dtick=25),
                 yaxis = dict(title = 'Hectares'),
